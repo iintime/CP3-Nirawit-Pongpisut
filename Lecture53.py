@@ -1,6 +1,7 @@
-totalPrice = int(input())
-def vatCal(totalPrice):
-    result = totalPrice+(totalPrice*7/100)
-    return result
+price = int(input("Enter your price : "))
+def vatCalculate(price):
+    totalPrice = price + (price*7/100)
+    return totalPrice
 
-print(vatCal(totalPrice))
+print(vatCalculate(price))
+
