@@ -44,7 +44,9 @@ labelResult = Label(MainWindow,text="Total")
 Label(MainWindow,text="THB").grid(row=6, column=2)
 labelResult.grid(row=6,column=1)
 
-clearButton = Button(MainWindow, text="Reset", command=reset).grid(row=7, column=0,sticky=E)
+clearButton = Button(MainWindow, text="Reset", command=reset)
+clearButton.bind('<Button-1>', leftClickButton)
+clearButton.grid(row=7, column=0,sticky=E)
 
 MainWindow.mainloop()
 
